@@ -25,6 +25,10 @@ export default function MonthlyView({
 }: MonthlyViewProps) {
   const [currentDate, setCurrentDate] = useState(new Date());
   const [loadingId, setLoadingId] = useState<string | null>(null);
+  // Track which property has the rent form open: propertyId or null
+  const [rentFormOpen, setRentFormOpen] = useState<string | null>(null);
+  const [rentFormAmount, setRentFormAmount] = useState('');
+  const [rentFormDate, setRentFormDate] = useState('');
 
   const month = currentDate.getMonth();
   const year = currentDate.getFullYear();
@@ -78,6 +82,49 @@ export default function MonthlyView({
     setLoadingId(null);
   };
 
+  const openRentForm = (property: Property) => {
+    const existing = findTransaction(property.id, 'Aluguel');
+    if (existing) {
+      // Already paid: clicking removes it
+      togglePayment(property, 'Aluguel');
+      return;
+    }
+    // Open the form pre-filled
+    setRentFormOpen(property.id);
+    setRentFormAmount(property.rentValue.toString());
+    // Default date: today
+    setRentFormDate(new Date().toISOString().split('T')[0]);
+  };
+
+  const submitRentForm = async (property: Property) => {
+    const amount = parseFloat(rentFormAmount);
+    if (isNaN(amount) || amount <= 0) {
+      alert('Informe um valor válido.');
+      return;
+    }
+    if (!rentFormDate) {
+      alert('Informe a data do pagamento.');
+      return;
+    }
+    const key = `${property.id}-Aluguel`;
+    setLoadingId(key);
+    try {
+      await onAddTransaction({
+        propertyId: property.id,
+        type: 'income',
+        category: 'Aluguel',
+        description: `Aluguel ${MONTHS[month]}/${year} - ${property.name} ${property.unit}`,
+        amount,
+        date: rentFormDate,
+      });
+      setRentFormOpen(null);
+    } catch (err) {
+      console.error('Erro ao salvar:', err);
+      alert('Erro ao salvar. Tente novamente.');
+    }
+    setLoadingId(null);
+  };
+
   const totalExpected = rentProperties.reduce((sum, p) => sum + p.rentValue, 0);
   const totalReceived = rentProperties.reduce((sum, p) => {
     const tx = findTransaction(p.id, 'Aluguel');
@@ -122,11 +169,13 @@ export default function MonthlyView({
       {/* Property cards */}
       <div className="space-y-2">
         {rentProperties.map((property) => {
-          const rentPaid = !!findTransaction(property.id, 'Aluguel');
+          const rentTx = findTransaction(property.id, 'Aluguel');
+          const rentPaid = !!rentTx;
           const condoPaid = !!findTransaction(property.id, 'Condomínio');
           const iptuPaid = !!findTransaction(property.id, 'IPTU');
 
           const allPaid = rentPaid && (property.condoFee <= 0 || condoPaid) && (property.iptu <= 0 || iptuPaid);
+          const isFormOpen = rentFormOpen === property.id;
 
           return (
             <div
@@ -148,13 +197,69 @@ export default function MonthlyView({
                   </p>
                 </div>
 
+                {/* Rent payment: show details if paid */}
+                {rentPaid && rentTx && (
+                  <div className="flex items-center gap-2 text-sm text-emerald-700 bg-emerald-50 rounded-lg px-3 py-1.5">
+                    <Check className="w-4 h-4" />
+                    <span>
+                      Aluguel pago: <strong>{formatCurrency(rentTx.amount)}</strong> em{' '}
+                      <strong>{new Date(rentTx.date + 'T12:00:00').toLocaleDateString('pt-BR')}</strong>
+                    </span>
+                  </div>
+                )}
+
+                {/* Rent form (inline) */}
+                {isFormOpen && !rentPaid && (
+                  <div className="bg-blue-50 border border-blue-200 rounded-lg p-3 space-y-2">
+                    <p className="text-sm font-medium text-blue-900">Registrar pagamento do aluguel</p>
+                    <div className="flex flex-wrap gap-2">
+                      <div className="flex-1 min-w-[140px]">
+                        <label className="text-xs text-blue-700">Valor pago (R$)</label>
+                        <input
+                          type="number"
+                          step="0.01"
+                          value={rentFormAmount}
+                          onChange={(e) => setRentFormAmount(e.target.value)}
+                          className="w-full mt-0.5 px-2 py-1.5 border border-blue-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                          placeholder="0,00"
+                        />
+                      </div>
+                      <div className="flex-1 min-w-[140px]">
+                        <label className="text-xs text-blue-700">Data do pagamento</label>
+                        <input
+                          type="date"
+                          value={rentFormDate}
+                          onChange={(e) => setRentFormDate(e.target.value)}
+                          className="w-full mt-0.5 px-2 py-1.5 border border-blue-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        />
+                      </div>
+                    </div>
+                    <div className="flex gap-2 pt-1">
+                      <button
+                        onClick={() => submitRentForm(property)}
+                        disabled={loadingId === `${property.id}-Aluguel`}
+                        className="flex items-center gap-1.5 px-3 py-1.5 bg-emerald-500 text-white rounded-lg text-sm font-medium hover:bg-emerald-600 disabled:opacity-50"
+                      >
+                        <Check className="w-4 h-4" />
+                        Confirmar
+                      </button>
+                      <button
+                        onClick={() => setRentFormOpen(null)}
+                        className="flex items-center gap-1.5 px-3 py-1.5 bg-slate-200 text-slate-700 rounded-lg text-sm font-medium hover:bg-slate-300"
+                      >
+                        Cancelar
+                      </button>
+                    </div>
+                  </div>
+                )}
+
                 {/* Payment buttons row */}
                 <div className="flex flex-wrap gap-2">
                   <PaymentButton
                     label={`Aluguel ${formatCurrency(property.rentValue)}`}
                     paid={rentPaid}
                     loading={loadingId === `${property.id}-Aluguel`}
-                    onClick={() => togglePayment(property, 'Aluguel')}
+                    onClick={() => openRentForm(property)}
                   />
                   {property.condoFee > 0 && (
                     <PaymentButton
@@ -187,7 +292,7 @@ export default function MonthlyView({
       )}
 
       <div className="bg-blue-50 border border-blue-200 rounded-xl p-4 text-sm text-blue-700">
-        💡 Clique nos botões para alternar entre <strong>Pago</strong> e <strong>Não Pago</strong> para Aluguel, Condomínio e IPTU.
+        💡 Clique em <strong>Aluguel</strong> para informar valor e data do pagamento. Condomínio e IPTU alternam entre Pago/Não Pago.
       </div>
     </div>
   );
