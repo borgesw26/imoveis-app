@@ -18,16 +18,12 @@ export default function AnalyticsView({ properties, transactions: _transactions 
   return (
     <div className="space-y-6 animate-fade-in">
       <h1 className="text-2xl font-bold text-slate-900">Análises e Relatórios</h1>
-
-      {/* Key Metrics */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
         <MetricCard label="Cap Rate" value={`${capRate}%`} />
         <MetricCard label="Taxa Vacância" value={`${vacancyRate}%`} />
         <MetricCard label="Custo Condomínio/mês" value={formatCurrency(totalCondo)} />
         <MetricCard label="Custo IPTU/mês" value={formatCurrency(totalIptu)} />
       </div>
-
-      {/* Property Table */}
       <div className="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden">
         <div className="px-6 py-4 border-b border-slate-200">
           <h2 className="text-lg font-semibold text-slate-900">Resumo dos Imóveis</h2>
@@ -56,16 +52,10 @@ export default function AnalyticsView({ properties, transactions: _transactions 
                     <td className="px-4 py-3">{formatCurrency(p.iptu)}</td>
                     <td className="px-4 py-3">{p.tenant || '-'}</td>
                     <td className="px-4 py-3">
-                      {p.endDate ? (
-                        <span className={days <= 90 ? 'text-amber-600 font-medium' : ''}>
-                          {formatDate(p.endDate)} ({days}d)
-                        </span>
-                      ) : '-'}
+                      {p.endDate ? <span className={days <= 90 ? 'text-amber-600 font-medium' : ''}>{formatDate(p.endDate)} ({days}d)</span> : '-'}
                     </td>
                     <td className="px-4 py-3">
-                      <span className={`px-2 py-1 rounded-full text-xs font-medium ${getStatusColor(p.status)}`}>
-                        {getStatusLabel(p.status)}
-                      </span>
+                      <span className={`px-2 py-1 rounded-full text-xs font-medium ${getStatusColor(p.status)}`}>{getStatusLabel(p.status)}</span>
                     </td>
                   </tr>
                 );
@@ -74,10 +64,7 @@ export default function AnalyticsView({ properties, transactions: _transactions 
           </table>
         </div>
       </div>
-
-      <p className="text-sm text-slate-400 text-center">
-        Registre pagamentos na aba Mensal. Use as setas para ver outros meses.
-      </p>
+      <p className="text-sm text-slate-400 text-center">Registre pagamentos na aba Mensal. Use as setas para ver outros meses.</p>
     </div>
   );
 }

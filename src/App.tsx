@@ -2,20 +2,21 @@ import { useState, useEffect, useCallback } from 'react';
 import { Property, Transaction } from './types';
 import {
   getProperties, getTransactions, addProperty, updateProperty,
-  deleteProperty, addTransaction, deleteTransaction, initializeWithSampleData,
+  deleteProperty, addTransaction, deleteTransaction,
 } from './utils/storage';
 import { calculateDashboardStats } from './utils/helpers';
-import Header, { View } from './components/Header';
+import Header from './components/Header';
 import HomePage from './components/HomePage';
-import Dashboard from './components/Dashboard';
 import PropertyList from './components/PropertyList';
 import PropertyForm from './components/PropertyForm';
 import PropertyDetails from './components/PropertyDetails';
 import TransactionForm from './components/TransactionForm';
 import AlertsPanel from './components/AlertsPanel';
 import MonthlyView from './components/MonthlyView';
-import Charts from './components/Charts';
-import Analytics from './components/Analytics';
+import Charts from './components/ChartsView';
+import Analytics from './components/AnalyticsView';
+
+type View = 'home' | 'properties' | 'property-details' | 'add-property' | 'edit-property' | 'monthly' | 'charts' | 'analytics';
 
 function App() {
   const [view, setView] = useState<View>('home');
@@ -29,7 +30,6 @@ function App() {
   const loadData = useCallback(async () => {
     try {
       setLoading(true);
-      await initializeWithSampleData();
       const [propertiesData, transactionsData] = await Promise.all([
         getProperties(),
         getTransactions(),
