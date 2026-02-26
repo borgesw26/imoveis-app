@@ -53,6 +53,7 @@ export default function MonthlyView({
 
   const togglePayment = async (property: Property, category: PaymentCategory) => {
     const key = `${property.id}-${category}`;
+    if (loadingId) return; // Prevent double-clicks
     setLoadingId(key);
     try {
       const existing = findTransaction(property.id, category);
@@ -97,6 +98,7 @@ export default function MonthlyView({
   };
 
   const submitRentForm = async (property: Property) => {
+    if (loadingId) return; // Prevent double-clicks
     const amount = parseFloat(rentFormAmount);
     if (isNaN(amount) || amount <= 0) {
       alert('Informe um valor válido.');
