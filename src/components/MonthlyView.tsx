@@ -142,21 +142,23 @@ export default function MonthlyView({
                     {property.name} - {property.unit}
                   </h3>
                   <p className="text-sm text-slate-500">
-                    Vence dia {property.dueDay || 1} • {formatCurrency(property.rentValue)}
+                    Vence dia {property.dueDay || 1} • Aluguel: {formatCurrency(property.rentValue)}
+                    {property.condoFee > 0 && ` • Cond: ${formatCurrency(property.condoFee)}`}
+                    {property.iptu > 0 && ` • IPTU: ${formatCurrency(property.iptu)}`}
                   </p>
                 </div>
 
                 {/* Payment buttons row */}
                 <div className="flex flex-wrap gap-2">
                   <PaymentButton
-                    label="Aluguel"
+                    label={`Aluguel ${formatCurrency(property.rentValue)}`}
                     paid={rentPaid}
                     loading={loadingId === `${property.id}-Aluguel`}
                     onClick={() => togglePayment(property, 'Aluguel')}
                   />
                   {property.condoFee > 0 && (
                     <PaymentButton
-                      label="Condomínio"
+                      label={`Condomínio ${formatCurrency(property.condoFee)}`}
                       paid={condoPaid}
                       loading={loadingId === `${property.id}-Condomínio`}
                       onClick={() => togglePayment(property, 'Condomínio')}
@@ -164,7 +166,7 @@ export default function MonthlyView({
                   )}
                   {property.iptu > 0 && (
                     <PaymentButton
-                      label="IPTU"
+                      label={`IPTU ${formatCurrency(property.iptu)}`}
                       paid={iptuPaid}
                       loading={loadingId === `${property.id}-IPTU`}
                       onClick={() => togglePayment(property, 'IPTU')}
