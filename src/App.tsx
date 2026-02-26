@@ -27,9 +27,9 @@ function App() {
   const [showAlerts, setShowAlerts] = useState(false);
   const [loading, setLoading] = useState(true);
 
-  const loadData = useCallback(async () => {
+  const loadData = useCallback(async (isInitial = false) => {
     try {
-      setLoading(true);
+      if (isInitial) setLoading(true);
       const [propertiesData, transactionsData] = await Promise.all([
         getProperties(),
         getTransactions(),
@@ -39,11 +39,11 @@ function App() {
     } catch (error) {
       console.error('Error loading data:', error);
     } finally {
-      setLoading(false);
+      if (isInitial) setLoading(false);
     }
   }, []);
 
-  useEffect(() => { loadData(); }, [loadData]);
+  useEffect(() => { loadData(true); }, [loadData]);
 
   const stats = calculateDashboardStats(properties, transactions);
 
