@@ -38,7 +38,7 @@ jobs:
           const TWILIO_SID = process.env.TWILIO_SID;
           const TWILIO_TOKEN = process.env.TWILIO_TOKEN;
           const TWILIO_FROM = process.env.TWILIO_FROM;
-          const TERCIA_PHONE = 'whatsapp:+5571982963132';
+          const TERCIA_PHONE = 'whatsapp:+557182963132';
           const MONTHS = ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'];
           const fmt = v => new Intl.NumberFormat('pt-BR',{style:'currency',currency:'BRL'}).format(v);
           
