@@ -1,0 +1,86 @@
+name: Weekly Summary (WhatsApp/Email)
+
+on:
+  schedule:
+    - cron: '0 12 * * 1' # Every Monday at 12:00 UTC (9:00 AM BRT)
+  workflow_dispatch: # Manual trigger
+
+jobs:
+  summary:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install firebase-admin
+        run: npm install firebase-admin
+
+      - name: Generate and send summary
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+          TWILIO_SID: ${{ secrets.TWILIO_SID }}
+          TWILIO_TOKEN: ${{ secrets.TWILIO_TOKEN }}
+          TWILIO_FROM: ${{ secrets.TWILIO_FROM }}
+        run: |
+          cat > summary.js << 'EOF'
+          const admin = require('firebase-admin');
+          const https = require('https');
+          
+          const sa = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT);
+          admin.initializeApp({ credential: admin.credential.cert(sa) });
+          const db = admin.firestore();
+          
+          const TWILIO_SID = process.env.TWILIO_SID;
+          const TWILIO_TOKEN = process.env.TWILIO_TOKEN;
+          const TWILIO_FROM = process.env.TWILIO_FROM;
+          const TERCIA_PHONE = 'whatsapp:+5571982963132';
+          const MONTHS = ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'];
+          const fmt = v => new Intl.NumberFormat('pt-BR',{style:'currency',currency:'BRL'}).format(v);
+          
+          function sendWA(body) {
+            const data = `To=${encodeURIComponent(TERCIA_PHONE)}&From=${encodeURIComponent(TWILIO_FROM)}&Body=${encodeURIComponent(body)}`;
+            return new Promise((res,rej) => {
+              const req = https.request({
+                hostname:'api.twilio.com',
+                path:`/2010-04-01/Accounts/${TWILIO_SID}/Messages.json`,
+                method:'POST',auth:`${TWILIO_SID}:${TWILIO_TOKEN}`,
+                headers:{'Content-Type':'application/x-www-form-urlencoded'}
+              }, r => { let d='';r.on('data',c=>d+=c);r.on('end',()=>r.statusCode>=400?rej(new Error(d)):res(JSON.parse(d)));});
+              req.on('error',rej);req.write(data);req.end();
+            });
+          }
+          
+          (async()=>{
+            const now=new Date(),mo=now.getMonth(),yr=now.getFullYear();
+            const [ps,ts]=await Promise.all([db.collection('properties').get(),db.collection('transactions').get()]);
+            const props=ps.docs.map(d=>({id:d.id,...d.data()}));
+            const txs=ts.docs.map(d=>({id:d.id,...d.data()}));
+            const occ=props.filter(p=>p.status==='occupied'&&p.rentValue>0);
+            const mtx=txs.filter(t=>{const d=new Date(t.date);return d.getMonth()===mo&&d.getFullYear()===yr&&t.type==='income'&&t.category==='Aluguel';});
+            const exp=occ.reduce((s,p)=>s+p.rentValue,0);
+            const paid=occ.filter(p=>mtx.some(t=>t.propertyId===p.id));
+            const recv=paid.reduce((s,p)=>{const t=mtx.find(t=>t.propertyId===p.id);return s+(t?t.amount:0);},0);
+            const pend=occ.filter(p=>!mtx.some(t=>t.propertyId===p.id));
+            
+            let msg=`🏠 *Resumo Semanal - Meus Imóveis*\n📅 ${MONTHS[mo]} ${yr}\n\n`;
+            msg+=`💰 *Receita:* ${fmt(recv)} / ${fmt(exp)}\n✅ *Pagos:* ${paid.length} de ${occ.length}\n\n`;
+            if(pend.length>0){msg+=`⚠️ *Pendentes:*\n`;pend.forEach(p=>{msg+=`  • ${p.name} ${p.unit} - ${fmt(p.rentValue)} (dia ${p.dueDay})\n`;});msg+='\n';}
+            const expiring=props.filter(p=>{if(!p.endDate||p.status!=='occupied')return false;const d=Math.round((new Date(p.endDate+'T00:00:00').getTime()-now.getTime())/86400000);return d>=0&&d<=60;});
+            if(expiring.length>0){msg+=`📋 *Contratos vencendo:*\n`;expiring.forEach(p=>{const d=Math.round((new Date(p.endDate+'T00:00:00').getTime()-now.getTime())/86400000);msg+=`  • ${p.name} ${p.unit} - ${d} dias\n`;});msg+='\n';}
+            const vac=props.filter(p=>p.status==='vacant');
+            if(vac.length>0)msg+=`🔑 *${vac.length} vago(s)* - custo: ${fmt(vac.reduce((s,p)=>s+p.condoFee+p.iptu+p.extraFee,0))}/mês\n`;
+            msg+=`\n🔗 https://borgesw26.github.io/imoveis-app/`;
+            
+            if(TWILIO_SID&&TWILIO_TOKEN&&TWILIO_FROM){
+              try{const r=await sendWA(msg);console.log('✅ WhatsApp sent:',r.sid);}
+              catch(e){console.error('❌ WhatsApp failed:',e.message);console.log(msg);}
+            }else{console.log('⚠️ Twilio not configured');console.log(msg);}
+            process.exit(0);
+          })();
+          EOF
+          node summary.js
