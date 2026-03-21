@@ -1,0 +1,73 @@
+name: Daily Firestore Backup
+
+on:
+  schedule:
+    - cron: '0 6 * * *' # Every day at 6:00 UTC (2:00 AM EST)
+  workflow_dispatch: # Manual trigger
+
+permissions:
+  contents: write
+
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install firebase-admin
+        run: npm install firebase-admin
+
+      - name: Run backup
+        env:
+          FIREBASE_SERVICE_ACCOUNT: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+        run: |
+          cat > backup.js << 'EOF'
+          const admin = require('firebase-admin');
+          const fs = require('fs');
+
+          const serviceAccount = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT);
+          admin.initializeApp({ credential: admin.credential.cert(serviceAccount) });
+          const db = admin.firestore();
+
+          (async () => {
+            const collections = ['properties', 'transactions'];
+            const backup = { backupDate: new Date().toISOString() };
+
+            for (const col of collections) {
+              const snapshot = await db.collection(col).get();
+              backup[col] = {};
+              snapshot.forEach(doc => { backup[col][doc.id] = doc.data(); });
+              console.log(`${col}: ${snapshot.size} documents`);
+            }
+
+            if (!fs.existsSync('backups')) fs.mkdirSync('backups');
+            
+            const date = new Date().toISOString().split('T')[0];
+            fs.writeFileSync(`backups/backup-${date}.json`, JSON.stringify(backup, null, 2));
+            fs.writeFileSync('backups/latest.json', JSON.stringify(backup, null, 2));
+            
+            // Keep only last 30 backups
+            const files = fs.readdirSync('backups').filter(f => f.startsWith('backup-')).sort();
+            while (files.length > 30) {
+              fs.unlinkSync(`backups/${files.shift()}`);
+            }
+            
+            console.log('Backup complete!');
+            process.exit(0);
+          })();
+          EOF
+          node backup.js
+
+      - name: Commit backup
+        run: |
+          git config user.name "Backup Bot"
+          git config user.email "backup@bot"
+          git add backups/
+          git diff --staged --quiet || git commit -m "backup: Firestore daily backup $(date +%Y-%m-%d)"
+          git push
