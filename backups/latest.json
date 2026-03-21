@@ -1,0 +1,364 @@
+{
+  "backupDate": "2026-03-21T20:52:41.852Z",
+  "properties": {
+    "4nTeFx11WsM1FUn8YUP8": {
+      "name": "LUDCO",
+      "unit": "1301",
+      "area": 180.67,
+      "propertyValue": 1490000,
+      "rentValue": 6405,
+      "condoFee": 1416.69,
+      "iptu": 996.26,
+      "extraFee": 420.18,
+      "tenant": "LEILA",
+      "startDate": "2024-02-20",
+      "endDate": "2027-02-19",
+      "dueDay": 1,
+      "netValue": 5984.82,
+      "notes": "Greenville, Edf.: Avalon - 4 quartos 3 garagens",
+      "status": "occupied",
+      "createdAt": "2026-03-21T20:12:46.452Z",
+      "updatedAt": "2026-03-21T20:12:46.452Z"
+    },
+    "7nlPDllkKxWbynIcnDhy": {
+      "name": "AQUARIUS",
+      "unit": "1201",
+      "area": 79.17,
+      "propertyValue": 620000,
+      "rentValue": 1800,
+      "condoFee": 1217.4,
+      "iptu": 181.34,
+      "extraFee": 0,
+      "tenant": "NADJA",
+      "startDate": "2026-01-02",
+      "endDate": "2026-08-01",
+      "dueDay": 5,
+      "netValue": 1930,
+      "notes": "Avenida Professor Magalhães Neto - 2 quartos 1 garagem",
+      "status": "occupied",
+      "createdAt": "2026-03-21T20:12:47.667Z",
+      "updatedAt": "2026-03-21T20:12:47.667Z"
+    },
+    "QnrIvXIbkbj0mxWZZHLZ": {
+      "name": "VILAGE ITAP",
+      "unit": "10",
+      "area": 0,
+      "propertyValue": 700000,
+      "rentValue": 0,
+      "condoFee": 0,
+      "iptu": 0,
+      "extraFee": 0,
+      "tenant": "",
+      "startDate": "",
+      "endDate": "",
+      "dueDay": 1,
+      "netValue": 0,
+      "notes": "",
+      "status": "vacant",
+      "createdAt": "2026-03-21T20:12:48.367Z",
+      "updatedAt": "2026-03-21T20:12:48.367Z"
+    },
+    "X7UERC1m3BaieaM7drSs": {
+      "name": "AQUARIUS",
+      "unit": "1103",
+      "area": 50.05,
+      "propertyValue": 415000,
+      "rentValue": 1791.73,
+      "condoFee": 749.24,
+      "iptu": 195.02,
+      "extraFee": 33.04,
+      "tenant": "JAIR",
+      "startDate": "2024-04-12",
+      "endDate": "2027-04-01",
+      "dueDay": 12,
+      "netValue": 1758.69,
+      "notes": "Avenida Professor Magalhães Neto - 1 quarto 1 garagem",
+      "status": "occupied",
+      "createdAt": "2026-03-21T20:12:47.488Z",
+      "updatedAt": "2026-03-21T20:12:47.488Z"
+    },
+    "lfSNhIVzCF7P987nLNZN": {
+      "name": "AQUARIUS",
+      "unit": "1305",
+      "area": 50.05,
+      "propertyValue": 420000,
+      "rentValue": 1700,
+      "condoFee": 749.24,
+      "iptu": 195.02,
+      "extraFee": 0,
+      "tenant": "JULIETE",
+      "startDate": "2025-01-21",
+      "endDate": "2028-01-20",
+      "dueDay": 21,
+      "netValue": 1700,
+      "notes": "Avenida Professor Magalhães Neto - 1 quarto 1 garagem",
+      "status": "occupied",
+      "createdAt": "2026-03-21T20:12:47.257Z",
+      "updatedAt": "2026-03-21T20:12:47.257Z"
+    },
+    "yCNbZebbXKG5Lc9oBTL3": {
+      "name": "VITORIA",
+      "unit": "202",
+      "area": 49,
+      "propertyValue": 500000,
+      "rentValue": 2700,
+      "condoFee": 0,
+      "iptu": 0,
+      "extraFee": 0,
+      "tenant": "",
+      "startDate": "",
+      "endDate": "",
+      "dueDay": 1,
+      "netValue": 2700,
+      "notes": "Av 7 de Setembro - 1 quarto 1 garagem",
+      "status": "vacant",
+      "createdAt": "2026-03-21T20:12:47.867Z",
+      "updatedAt": "2026-03-21T20:12:47.867Z"
+    }
+  },
+  "transactions": {
+    "53zliXSVyjYtd7TKfMs3": {
+      "propertyId": "4nTeFx11WsM1FUn8YUP8",
+      "type": "income",
+      "category": "Condomínio",
+      "description": "Condomínio Fevereiro/2026 - LUDCO 1301",
+      "amount": 1416.69,
+      "date": "2026-02-15",
+      "createdAt": "2026-03-21T20:36:55.889Z"
+    },
+    "9f5h8GrxKYQ5ewr59ANE": {
+      "propertyId": "X7UERC1m3BaieaM7drSs",
+      "type": "income",
+      "category": "Aluguel",
+      "description": "Aluguel Fevereiro/2026 - AQUARIUS 1103",
+      "amount": 1791.73,
+      "date": "2026-03-27",
+      "createdAt": "2026-03-21T20:37:38.309Z"
+    },
+    "CfuCeqY9I4YbNLmj5bnU": {
+      "propertyId": "X7UERC1m3BaieaM7drSs",
+      "type": "income",
+      "category": "Aluguel",
+      "description": "Aluguel Fevereiro/2026 - AQUARIUS 1103",
+      "amount": 1791.73,
+      "date": "2026-03-21",
+      "createdAt": "2026-03-21T20:41:41.041Z"
+    },
+    "DLpRkqJDMYqpXduW8y0X": {
+      "propertyId": "X7UERC1m3BaieaM7drSs",
+      "type": "income",
+      "category": "Aluguel",
+      "description": "Aluguel Fevereiro/2026 - AQUARIUS 1103",
+      "amount": 1791.73,
+      "date": "2026-02-27",
+      "createdAt": "2026-03-21T20:43:21.453Z"
+    },
+    "EWqqkyccyHS6WRu95fUj": {
+      "propertyId": "lfSNhIVzCF7P987nLNZN",
+      "type": "income",
+      "category": "IPTU",
+      "description": "IPTU Fevereiro/2026 - AQUARIUS 1305",
+      "amount": 195.02,
+      "date": "2026-02-15",
+      "createdAt": "2026-03-21T20:37:59.927Z"
+    },
+    "GavvqTSxvGCInYBrPSUU": {
+      "propertyId": "4nTeFx11WsM1FUn8YUP8",
+      "type": "income",
+      "category": "Aluguel",
+      "description": "Aluguel Fevereiro/2026 - LUDCO 1301",
+      "amount": 6405,
+      "date": "2026-02-27",
+      "createdAt": "2026-03-21T20:36:53.758Z"
+    },
+    "HQxmPCq3GzaYnAzufr1F": {
+      "propertyId": "lfSNhIVzCF7P987nLNZN",
+      "type": "income",
+      "category": "Aluguel",
+      "description": "Aluguel Fevereiro/2026 - AQUARIUS 1305",
+      "amount": 1700,
+      "date": "2026-03-27",
+      "createdAt": "2026-03-21T20:37:49.454Z"
+    },
+    "LsiZLfGe82fdJuHzC6US": {
+      "propertyId": "lfSNhIVzCF7P987nLNZN",
+      "type": "income",
+      "category": "Aluguel",
+      "description": "Aluguel Fevereiro/2026 - AQUARIUS 1305",
+      "amount": 1700,
+      "date": "2026-02-27",
+      "createdAt": "2026-03-21T20:43:29.621Z"
+    },
+    "MdB6huCPT4mI1QEeBYsq": {
+      "propertyId": "7nlPDllkKxWbynIcnDhy",
+      "type": "income",
+      "category": "Aluguel",
+      "description": "Aluguel Fevereiro/2026 - AQUARIUS 1201",
+      "amount": 1800,
+      "date": "2026-02-27",
+      "createdAt": "2026-03-21T20:37:09.210Z"
+    },
+    "P781p1zCIshwLRNfzrYP": {
+      "propertyId": "7nlPDllkKxWbynIcnDhy",
+      "type": "income",
+      "category": "IPTU",
+      "description": "IPTU Fevereiro/2026 - AQUARIUS 1201",
+      "amount": 181.34,
+      "date": "2026-02-15",
+      "createdAt": "2026-03-21T20:37:11.683Z"
+    },
+    "UURXo1HkVUad4HJZdFsP": {
+      "propertyId": "lfSNhIVzCF7P987nLNZN",
+      "type": "income",
+      "category": "Aluguel",
+      "description": "Aluguel Fevereiro/2026 - AQUARIUS 1305",
+      "amount": 1700,
+      "date": "2026-03-21",
+      "createdAt": "2026-03-21T20:41:58.705Z"
+    },
+    "X4p2LEF29Y7MAPOlalP0": {
+      "propertyId": "7nlPDllkKxWbynIcnDhy",
+      "type": "income",
+      "category": "Condomínio",
+      "description": "Condomínio Fevereiro/2026 - AQUARIUS 1201",
+      "amount": 1217.4,
+      "date": "2026-02-15",
+      "createdAt": "2026-03-21T20:37:10.699Z"
+    },
+    "Z06ndA6itFdZJm8YJ1b7": {
+      "propertyId": "lfSNhIVzCF7P987nLNZN",
+      "type": "income",
+      "category": "Condomínio",
+      "description": "Condomínio Fevereiro/2026 - AQUARIUS 1305",
+      "amount": 749.24,
+      "date": "2026-02-15",
+      "createdAt": "2026-03-21T20:37:58.812Z"
+    },
+    "aI61pWjGaTUGWYl6538b": {
+      "propertyId": "X7UERC1m3BaieaM7drSs",
+      "type": "income",
+      "category": "Aluguel",
+      "description": "Aluguel Fevereiro/2026 - AQUARIUS 1103",
+      "amount": 1791.73,
+      "date": "2026-03-27",
+      "createdAt": "2026-03-21T20:38:41.089Z"
+    },
+    "c86gnY5K8vObjE4OzG9Z": {
+      "propertyId": "X7UERC1m3BaieaM7drSs",
+      "type": "income",
+      "category": "Aluguel",
+      "description": "Aluguel Fevereiro/2026 - AQUARIUS 1103",
+      "amount": 1791.73,
+      "date": "2026-03-21",
+      "createdAt": "2026-03-21T20:42:06.656Z"
+    },
+    "cjQmQflfVuANHDfTxuhr": {
+      "propertyId": "lfSNhIVzCF7P987nLNZN",
+      "type": "income",
+      "category": "Aluguel",
+      "description": "Aluguel Fevereiro/2026 - AQUARIUS 1305",
+      "amount": 1700,
+      "date": "2026-03-27",
+      "createdAt": "2026-03-21T20:37:57.234Z"
+    },
+    "cjiL96A5tH1c2QeQWm5G": {
+      "propertyId": "X7UERC1m3BaieaM7drSs",
+      "type": "income",
+      "category": "Aluguel",
+      "description": "Aluguel Fevereiro/2026 - AQUARIUS 1103",
+      "amount": 1791.73,
+      "date": "2026-03-21",
+      "createdAt": "2026-03-21T20:37:41.367Z"
+    },
+    "hNTyOfTVY58vRi4moqE4": {
+      "propertyId": "4nTeFx11WsM1FUn8YUP8",
+      "type": "income",
+      "category": "IPTU",
+      "description": "IPTU Fevereiro/2026 - LUDCO 1301",
+      "amount": 996.26,
+      "date": "2026-02-15",
+      "createdAt": "2026-03-21T20:36:57.296Z"
+    },
+    "j9tXUxTR4dx3HCnSNAuz": {
+      "propertyId": "X7UERC1m3BaieaM7drSs",
+      "type": "income",
+      "category": "Aluguel",
+      "description": "Aluguel Fevereiro/2026 - AQUARIUS 1103",
+      "amount": 1791.73,
+      "date": "2026-03-27",
+      "createdAt": "2026-03-21T20:37:23.478Z"
+    },
+    "metOS9qfRtQnNIeZ6tPA": {
+      "propertyId": "X7UERC1m3BaieaM7drSs",
+      "type": "income",
+      "category": "Condomínio",
+      "description": "Condomínio Fevereiro/2026 - AQUARIUS 1103",
+      "amount": 749.24,
+      "date": "2026-02-15",
+      "createdAt": "2026-03-21T20:37:26.213Z"
+    },
+    "oWwv8GNWdUlrhr2fUchA": {
+      "propertyId": "X7UERC1m3BaieaM7drSs",
+      "type": "income",
+      "category": "IPTU",
+      "description": "IPTU Fevereiro/2026 - AQUARIUS 1103",
+      "amount": 195.02,
+      "date": "2026-02-15",
+      "createdAt": "2026-03-21T20:37:27.494Z"
+    },
+    "orrUpLBh22hU35Uc2okl": {
+      "propertyId": "4nTeFx11WsM1FUn8YUP8",
+      "type": "income",
+      "category": "Aluguel",
+      "description": "Aluguel Fevereiro/2026 - LUDCO 1301",
+      "amount": 6405,
+      "date": "2026-03-21",
+      "createdAt": "2026-03-21T20:36:38.309Z"
+    },
+    "qLqW3tf97JvMGEVZXopb": {
+      "propertyId": "yCNbZebbXKG5Lc9oBTL3",
+      "type": "income",
+      "category": "Aluguel",
+      "description": "Aluguel Fevereiro/2026 - VITORIA 202",
+      "amount": 2700,
+      "date": "2026-02-27",
+      "createdAt": "2026-03-21T20:43:36.404Z"
+    },
+    "rcpcFaslcjmxwClI0UV3": {
+      "propertyId": "X7UERC1m3BaieaM7drSs",
+      "type": "income",
+      "category": "Aluguel",
+      "description": "Aluguel Fevereiro/2026 - AQUARIUS 1103",
+      "amount": 1791.73,
+      "date": "2026-03-21",
+      "createdAt": "2026-03-21T20:38:17.614Z"
+    },
+    "rkD6JPLbYlarysdZfbWn": {
+      "propertyId": "X7UERC1m3BaieaM7drSs",
+      "type": "income",
+      "category": "Aluguel",
+      "description": "Aluguel Fevereiro/2026 - AQUARIUS 1103",
+      "amount": 1791.73,
+      "date": "2026-03-21",
+      "createdAt": "2026-03-21T20:38:30.339Z"
+    },
+    "uSITYDJ3tK3513H3175F": {
+      "propertyId": "yCNbZebbXKG5Lc9oBTL3",
+      "type": "income",
+      "category": "Aluguel",
+      "description": "Aluguel Fevereiro/2026 - VITORIA 202",
+      "amount": 2700,
+      "date": "2026-03-21",
+      "createdAt": "2026-03-21T20:38:04.036Z"
+    },
+    "ziLqEOTpvNLsHxF6txqt": {
+      "propertyId": "X7UERC1m3BaieaM7drSs",
+      "type": "income",
+      "category": "Aluguel",
+      "description": "Aluguel Fevereiro/2026 - AQUARIUS 1103",
+      "amount": 1791.73,
+      "date": "2026-03-21",
+      "createdAt": "2026-03-21T20:38:57.009Z"
+    }
+  }
+}
