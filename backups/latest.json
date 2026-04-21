@@ -1,5 +1,5 @@
 {
-  "backupDate": "2026-04-20T08:22:50.926Z",
+  "backupDate": "2026-04-21T08:05:18.681Z",
   "properties": {
     "4nTeFx11WsM1FUn8YUP8": {
       "name": "LUDCO",
@@ -422,6 +422,15 @@
       "amount": 195.02,
       "date": "2026-02-15",
       "createdAt": "2026-03-21T20:37:27.494Z"
+    },
+    "on27sRXcsRBJX5GZYrN4": {
+      "propertyId": "7nlPDllkKxWbynIcnDhy",
+      "type": "income",
+      "category": "Aluguel",
+      "description": "Aluguel Abril/2026 - AQUARIUS 1201",
+      "amount": 1930,
+      "date": "2026-04-21",
+      "createdAt": "2026-04-21T00:46:03.941Z"
     },
     "orrUpLBh22hU35Uc2okl": {
       "propertyId": "4nTeFx11WsM1FUn8YUP8",
