@@ -1,5 +1,5 @@
 {
-  "backupDate": "2026-04-04T07:11:50.385Z",
+  "backupDate": "2026-05-04T08:40:15.392Z",
   "properties": {
     "4nTeFx11WsM1FUn8YUP8": {
       "name": "LUDCO",
@@ -288,6 +288,15 @@
       "date": "2026-01-15",
       "createdAt": "2026-03-21T20:54:00.710Z"
     },
+    "P27tx9vZfbPqEFjPAOoc": {
+      "propertyId": "lfSNhIVzCF7P987nLNZN",
+      "type": "income",
+      "category": "Aluguel",
+      "description": "Aluguel Abril/2026 - AQUARIUS 1305",
+      "amount": 1700,
+      "date": "2026-04-13",
+      "createdAt": "2026-04-13T22:01:32.530Z"
+    },
     "P781p1zCIshwLRNfzrYP": {
       "propertyId": "7nlPDllkKxWbynIcnDhy",
       "type": "income",
@@ -414,6 +423,15 @@
       "date": "2026-02-15",
       "createdAt": "2026-03-21T20:37:27.494Z"
     },
+    "on27sRXcsRBJX5GZYrN4": {
+      "propertyId": "7nlPDllkKxWbynIcnDhy",
+      "type": "income",
+      "category": "Aluguel",
+      "description": "Aluguel Abril/2026 - AQUARIUS 1201",
+      "amount": 1930,
+      "date": "2026-04-21",
+      "createdAt": "2026-04-21T00:46:03.941Z"
+    },
     "orrUpLBh22hU35Uc2okl": {
       "propertyId": "4nTeFx11WsM1FUn8YUP8",
       "type": "income",
@@ -441,6 +459,15 @@
       "date": "2026-04-01",
       "createdAt": "2026-04-02T00:42:26.964Z"
     },
+    "sDMw64JHbeer5uBSHghp": {
+      "propertyId": "lfSNhIVzCF7P987nLNZN",
+      "type": "income",
+      "category": "Condomínio",
+      "description": "Condomínio Abril/2026 - AQUARIUS 1305",
+      "amount": 749.24,
+      "date": "2026-04-15",
+      "createdAt": "2026-04-13T22:01:19.546Z"
+    },
     "uSITYDJ3tK3513H3175F": {
       "propertyId": "yCNbZebbXKG5Lc9oBTL3",
       "type": "income",
@@ -450,6 +477,15 @@
       "date": "2026-03-21",
       "createdAt": "2026-03-21T20:38:04.036Z"
     },
+    "vyOgtFFMHTTTYHqkijxq": {
+      "propertyId": "7nlPDllkKxWbynIcnDhy",
+      "type": "income",
+      "category": "Condomínio",
+      "description": "Condomínio Abril/2026 - AQUARIUS 1201",
+      "amount": 1217.4,
+      "date": "2026-04-15",
+      "createdAt": "2026-04-06T17:55:47.369Z"
+    },
     "wVj6N7QljVLyPE2DHnTn": {
       "propertyId": "lfSNhIVzCF7P987nLNZN",
       "type": "income",
@@ -458,6 +494,24 @@
       "amount": 749.24,
       "date": "2026-01-15",
       "createdAt": "2026-03-21T20:54:18.288Z"
+    },
+    "wqESAr2SXwTtKscR4tbr": {
+      "propertyId": "QnrIvXIbkbj0mxWZZHLZ",
+      "type": "income",
+      "category": "Aluguel",
+      "description": "Aluguel Abril/2026 - VILAGE ITAP 10",
+      "amount": 1469,
+      "date": "2026-04-06",
+      "createdAt": "2026-04-06T11:47:05.135Z"
+    },
+    "yc3QigzMRNxv3TYmCMqU": {
+      "propertyId": "X7UERC1m3BaieaM7drSs",
+      "type": "income",
+      "category": "Aluguel",
+      "description": "Aluguel Abril/2026 - AQUARIUS 1103",
+      "amount": 1758.69,
+      "date": "2026-04-13",
+      "createdAt": "2026-04-13T22:02:04.598Z"
     }
   }
 }
