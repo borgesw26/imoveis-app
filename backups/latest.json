@@ -1,5 +1,5 @@
 {
-  "backupDate": "2026-05-04T08:40:15.392Z",
+  "backupDate": "2026-05-05T08:22:03.081Z",
   "properties": {
     "4nTeFx11WsM1FUn8YUP8": {
       "name": "LUDCO",
@@ -126,6 +126,15 @@
       "date": "2026-04-01",
       "createdAt": "2026-04-02T00:37:39.340Z"
     },
+    "10TCHQzNvi63ggNNrDMq": {
+      "propertyId": "4nTeFx11WsM1FUn8YUP8",
+      "type": "income",
+      "category": "Aluguel",
+      "description": "Aluguel Maio/2026 - LUDCO 1301",
+      "amount": 6218,
+      "date": "2026-05-04",
+      "createdAt": "2026-05-04T18:33:20.924Z"
+    },
     "53zliXSVyjYtd7TKfMs3": {
       "propertyId": "4nTeFx11WsM1FUn8YUP8",
       "type": "income",
@@ -134,6 +143,15 @@
       "amount": 1416.69,
       "date": "2026-02-15",
       "createdAt": "2026-03-21T20:36:55.889Z"
+    },
+    "8movuy7DKBDXF5zi6woY": {
+      "propertyId": "lfSNhIVzCF7P987nLNZN",
+      "type": "income",
+      "category": "Aluguel",
+      "description": "Aluguel Maio/2026 - AQUARIUS 1305",
+      "amount": 1700,
+      "date": "2026-05-04",
+      "createdAt": "2026-05-04T14:51:57.530Z"
     },
     "AL7wgJizg8k2hjTAO6o1": {
       "propertyId": "4nTeFx11WsM1FUn8YUP8",
@@ -342,6 +360,15 @@
       "date": "2026-03-24",
       "createdAt": "2026-03-24T11:14:53.166Z"
     },
+    "a5Ei69L93XpDEjF2X2Mp": {
+      "propertyId": "lfSNhIVzCF7P987nLNZN",
+      "type": "income",
+      "category": "IPTU",
+      "description": "IPTU Maio/2026 - AQUARIUS 1305",
+      "amount": 195.02,
+      "date": "2026-05-15",
+      "createdAt": "2026-05-04T18:34:42.810Z"
+    },
     "aFP862Y3aq2PAP1oBH0f": {
       "propertyId": "7nlPDllkKxWbynIcnDhy",
       "type": "income",
@@ -440,6 +467,15 @@
       "amount": 6405,
       "date": "2026-03-21",
       "createdAt": "2026-03-21T20:36:38.309Z"
+    },
+    "ozgappu2o1Ry1iYkhdqm": {
+      "propertyId": "lfSNhIVzCF7P987nLNZN",
+      "type": "income",
+      "category": "Condomínio",
+      "description": "Condomínio Maio/2026 - AQUARIUS 1305",
+      "amount": 749.24,
+      "date": "2026-05-15",
+      "createdAt": "2026-05-04T18:35:01.430Z"
     },
     "qLqW3tf97JvMGEVZXopb": {
       "propertyId": "yCNbZebbXKG5Lc9oBTL3",
