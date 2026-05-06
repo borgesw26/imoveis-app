@@ -1,5 +1,5 @@
 {
-  "backupDate": "2026-05-05T08:22:03.081Z",
+  "backupDate": "2026-05-06T08:38:26.242Z",
   "properties": {
     "4nTeFx11WsM1FUn8YUP8": {
       "name": "LUDCO",
@@ -188,6 +188,15 @@
       "amount": 1791.73,
       "date": "2026-02-27",
       "createdAt": "2026-03-21T20:43:21.453Z"
+    },
+    "E9GLh5brBvzDYyaYxqWh": {
+      "propertyId": "7nlPDllkKxWbynIcnDhy",
+      "type": "income",
+      "category": "Condomínio",
+      "description": "Condomínio Maio/2026 - AQUARIUS 1201",
+      "amount": 1217.4,
+      "date": "2026-05-15",
+      "createdAt": "2026-05-05T18:10:28.757Z"
     },
     "EVR1clpu5Hsa2Q19vuer": {
       "propertyId": "4nTeFx11WsM1FUn8YUP8",
