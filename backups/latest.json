@@ -1,5 +1,5 @@
 {
-  "backupDate": "2026-06-25T09:37:08.089Z",
+  "backupDate": "2026-06-26T09:43:53.391Z",
   "properties": {
     "4nTeFx11WsM1FUn8YUP8": {
       "name": "LUDCO",
@@ -360,6 +360,15 @@
       "date": "2026-01-15",
       "createdAt": "2026-03-21T20:54:00.710Z"
     },
+    "P21wXqGo3EIcFaTHqvrO": {
+      "propertyId": "7nlPDllkKxWbynIcnDhy",
+      "type": "income",
+      "category": "Aluguel",
+      "description": "Aluguel Junho/2026 - AQUARIUS 1201",
+      "amount": 1930,
+      "date": "2026-06-25",
+      "createdAt": "2026-06-25T23:25:11.471Z"
+    },
     "P27tx9vZfbPqEFjPAOoc": {
       "propertyId": "lfSNhIVzCF7P987nLNZN",
       "type": "income",
@@ -386,6 +395,15 @@
       "amount": 6218,
       "date": "2026-06-01",
       "createdAt": "2026-06-02T00:02:00.684Z"
+    },
+    "RGqjNtvgxyT1KuyPv0qm": {
+      "propertyId": "7nlPDllkKxWbynIcnDhy",
+      "type": "income",
+      "category": "IPTU",
+      "description": "IPTU Junho/2026 - AQUARIUS 1201",
+      "amount": 181.34,
+      "date": "2026-06-15",
+      "createdAt": "2026-06-25T23:25:31.947Z"
     },
     "RigSoyMdrX4HD1cl4gLA": {
       "propertyId": "X7UERC1m3BaieaM7drSs",
