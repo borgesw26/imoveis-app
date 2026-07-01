@@ -1,5 +1,5 @@
 {
-  "backupDate": "2026-06-01T11:51:22.130Z",
+  "backupDate": "2026-07-01T10:04:41.684Z",
   "properties": {
     "4nTeFx11WsM1FUn8YUP8": {
       "name": "LUDCO",
@@ -135,6 +135,15 @@
       "date": "2026-05-04",
       "createdAt": "2026-05-04T18:33:20.924Z"
     },
+    "3P6hOAGhsTamIlKw1XRL": {
+      "propertyId": "4nTeFx11WsM1FUn8YUP8",
+      "type": "income",
+      "category": "Aluguel",
+      "description": "Aluguel Junho/2026 - LUDCO 1301",
+      "amount": 6218,
+      "date": "2026-06-01",
+      "createdAt": "2026-06-02T00:03:11.018Z"
+    },
     "53zliXSVyjYtd7TKfMs3": {
       "propertyId": "4nTeFx11WsM1FUn8YUP8",
       "type": "income",
@@ -143,6 +152,15 @@
       "amount": 1416.69,
       "date": "2026-02-15",
       "createdAt": "2026-03-21T20:36:55.889Z"
+    },
+    "5sTzYMhQSaZRvH2Gfaw6": {
+      "propertyId": "4nTeFx11WsM1FUn8YUP8",
+      "type": "income",
+      "category": "Aluguel",
+      "description": "Aluguel Junho/2026 - LUDCO 1301",
+      "amount": 6218,
+      "date": "2026-06-01",
+      "createdAt": "2026-06-02T00:02:48.479Z"
     },
     "8movuy7DKBDXF5zi6woY": {
       "propertyId": "lfSNhIVzCF7P987nLNZN",
@@ -161,6 +179,15 @@
       "amount": 6218,
       "date": "2026-04-01",
       "createdAt": "2026-04-02T00:52:13.663Z"
+    },
+    "AX6CC5yCwbXSVjIust8i": {
+      "propertyId": "4nTeFx11WsM1FUn8YUP8",
+      "type": "income",
+      "category": "Aluguel",
+      "description": "Aluguel Junho/2026 - LUDCO 1301",
+      "amount": 6218,
+      "date": "2026-06-01",
+      "createdAt": "2026-06-02T00:04:04.656Z"
     },
     "C3UwvAnMeqwpbdwooAUO": {
       "propertyId": "4nTeFx11WsM1FUn8YUP8",
@@ -243,6 +270,15 @@
       "date": "2026-02-27",
       "createdAt": "2026-03-21T20:36:53.758Z"
     },
+    "GtmTHbDPnJYcYOc4fk2Z": {
+      "propertyId": "4nTeFx11WsM1FUn8YUP8",
+      "type": "income",
+      "category": "Aluguel",
+      "description": "Aluguel Junho/2026 - LUDCO 1301",
+      "amount": 6405,
+      "date": "2026-06-02",
+      "createdAt": "2026-06-02T00:04:10.091Z"
+    },
     "HQxmPCq3GzaYnAzufr1F": {
       "propertyId": "lfSNhIVzCF7P987nLNZN",
       "type": "income",
@@ -306,6 +342,15 @@
       "date": "2026-02-27",
       "createdAt": "2026-03-21T20:37:09.210Z"
     },
+    "MyQaUIWWIONHslz53751": {
+      "propertyId": "lfSNhIVzCF7P987nLNZN",
+      "type": "income",
+      "category": "Condomínio",
+      "description": "Condomínio Junho/2026 - AQUARIUS 1305",
+      "amount": 749.24,
+      "date": "2026-06-15",
+      "createdAt": "2026-06-10T19:57:24.986Z"
+    },
     "NpKfaNeAM5CXGE4cRQiH": {
       "propertyId": "7nlPDllkKxWbynIcnDhy",
       "type": "income",
@@ -314,6 +359,15 @@
       "amount": 181.34,
       "date": "2026-01-15",
       "createdAt": "2026-03-21T20:54:00.710Z"
+    },
+    "P21wXqGo3EIcFaTHqvrO": {
+      "propertyId": "7nlPDllkKxWbynIcnDhy",
+      "type": "income",
+      "category": "Aluguel",
+      "description": "Aluguel Junho/2026 - AQUARIUS 1201",
+      "amount": 1930,
+      "date": "2026-06-25",
+      "createdAt": "2026-06-25T23:25:11.471Z"
     },
     "P27tx9vZfbPqEFjPAOoc": {
       "propertyId": "lfSNhIVzCF7P987nLNZN",
@@ -332,6 +386,24 @@
       "amount": 181.34,
       "date": "2026-02-15",
       "createdAt": "2026-03-21T20:37:11.683Z"
+    },
+    "Q32FEmXuYoa8u5TfP3AY": {
+      "propertyId": "4nTeFx11WsM1FUn8YUP8",
+      "type": "income",
+      "category": "Aluguel",
+      "description": "Aluguel Junho/2026 - LUDCO 1301",
+      "amount": 6218,
+      "date": "2026-06-01",
+      "createdAt": "2026-06-02T00:02:00.684Z"
+    },
+    "RGqjNtvgxyT1KuyPv0qm": {
+      "propertyId": "7nlPDllkKxWbynIcnDhy",
+      "type": "income",
+      "category": "IPTU",
+      "description": "IPTU Junho/2026 - AQUARIUS 1201",
+      "amount": 181.34,
+      "date": "2026-06-15",
+      "createdAt": "2026-06-25T23:25:31.947Z"
     },
     "RigSoyMdrX4HD1cl4gLA": {
       "propertyId": "X7UERC1m3BaieaM7drSs",
@@ -387,6 +459,15 @@
       "date": "2026-01-15",
       "createdAt": "2026-03-21T20:53:59.718Z"
     },
+    "b1fRFbte7ShIzXo4iQEV": {
+      "propertyId": "X7UERC1m3BaieaM7drSs",
+      "type": "income",
+      "category": "Aluguel",
+      "description": "Aluguel Junho/2026 - AQUARIUS 1103",
+      "amount": 1758.69,
+      "date": "2026-06-13",
+      "createdAt": "2026-06-13T10:32:08.790Z"
+    },
     "c3rp6vBAffaY1Nzje1wj": {
       "propertyId": "4nTeFx11WsM1FUn8YUP8",
       "type": "income",
@@ -423,6 +504,15 @@
       "date": "2026-02-15",
       "createdAt": "2026-03-21T20:36:57.296Z"
     },
+    "k3ScHVH7J5v4WJey2oh4": {
+      "propertyId": "7nlPDllkKxWbynIcnDhy",
+      "type": "income",
+      "category": "Condomínio",
+      "description": "Condomínio Junho/2026 - AQUARIUS 1201",
+      "amount": 1217.4,
+      "date": "2026-06-15",
+      "createdAt": "2026-06-05T12:36:14.501Z"
+    },
     "lcphxZSbAosFRYBqChAU": {
       "propertyId": "4nTeFx11WsM1FUn8YUP8",
       "type": "income",
@@ -431,6 +521,15 @@
       "amount": 6218,
       "date": "2026-04-01",
       "createdAt": "2026-04-02T00:41:05.833Z"
+    },
+    "ldwdrrepwT1tocFdwAI2": {
+      "propertyId": "lfSNhIVzCF7P987nLNZN",
+      "type": "income",
+      "category": "Aluguel",
+      "description": "Aluguel Junho/2026 - AQUARIUS 1305",
+      "amount": 1700,
+      "date": "2026-06-10",
+      "createdAt": "2026-06-30T17:24:43.111Z"
     },
     "mOgV4iEVpPXPR4qpumc3": {
       "propertyId": "yCNbZebbXKG5Lc9oBTL3",
@@ -495,6 +594,15 @@
       "date": "2026-02-27",
       "createdAt": "2026-03-21T20:43:36.404Z"
     },
+    "rhvgvoYGV9X4XneTnK7k": {
+      "propertyId": "lfSNhIVzCF7P987nLNZN",
+      "type": "income",
+      "category": "IPTU",
+      "description": "IPTU Junho/2026 - AQUARIUS 1305",
+      "amount": 195.02,
+      "date": "2026-06-15",
+      "createdAt": "2026-06-10T19:58:09.124Z"
+    },
     "rrH443uBrOxJSyqCxrDW": {
       "propertyId": "4nTeFx11WsM1FUn8YUP8",
       "type": "income",
@@ -557,6 +665,15 @@
       "amount": 1758.69,
       "date": "2026-05-13",
       "createdAt": "2026-05-13T12:46:26.375Z"
+    },
+    "yW0bYsoDF5MEsYhB79Er": {
+      "propertyId": "7nlPDllkKxWbynIcnDhy",
+      "type": "income",
+      "category": "Aluguel",
+      "description": "Aluguel Maio/2026 - AQUARIUS 1201",
+      "amount": 1800,
+      "date": "2026-05-20",
+      "createdAt": "2026-06-02T00:00:34.845Z"
     },
     "yc3QigzMRNxv3TYmCMqU": {
       "propertyId": "X7UERC1m3BaieaM7drSs",
