@@ -1,5 +1,5 @@
 {
-  "backupDate": "2026-07-13T09:41:36.833Z",
+  "backupDate": "2026-07-14T08:21:14.557Z",
   "properties": {
     "4nTeFx11WsM1FUn8YUP8": {
       "name": "LUDCO",
@@ -513,6 +513,15 @@
       "date": "2026-01-15",
       "createdAt": "2026-03-21T20:53:48.045Z"
     },
+    "f7a0TaDeda5D4P6F99ta": {
+      "propertyId": "lfSNhIVzCF7P987nLNZN",
+      "type": "income",
+      "category": "Condomínio",
+      "description": "Condomínio Julho/2026 - AQUARIUS 1305",
+      "amount": 749.24,
+      "date": "2026-07-15",
+      "createdAt": "2026-07-13T15:35:08.800Z"
+    },
     "flioZFFK9AiQSdEGcStZ": {
       "propertyId": "lfSNhIVzCF7P987nLNZN",
       "type": "income",
@@ -665,6 +674,15 @@
       "amount": 749.24,
       "date": "2026-04-15",
       "createdAt": "2026-04-13T22:01:19.546Z"
+    },
+    "slg9obDCVBHtrJX1PjKj": {
+      "propertyId": "lfSNhIVzCF7P987nLNZN",
+      "type": "income",
+      "category": "IPTU",
+      "description": "IPTU Julho/2026 - AQUARIUS 1305",
+      "amount": 195.02,
+      "date": "2026-07-15",
+      "createdAt": "2026-07-13T15:35:19.347Z"
     },
     "uFSyjAuDjFFH5k6gJbmL": {
       "propertyId": "7nlPDllkKxWbynIcnDhy",
