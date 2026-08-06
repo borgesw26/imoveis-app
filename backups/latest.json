@@ -1,5 +1,5 @@
 {
-  "backupDate": "2026-08-05T08:47:04.906Z",
+  "backupDate": "2026-08-06T08:48:42.152Z",
   "properties": {
     "4nTeFx11WsM1FUn8YUP8": {
       "name": "LUDCO",
@@ -197,6 +197,15 @@
       "amount": 1700,
       "date": "2026-05-04",
       "createdAt": "2026-05-04T14:51:57.530Z"
+    },
+    "9HaYSRFPXMkQRCKP6dv6": {
+      "propertyId": "7nlPDllkKxWbynIcnDhy",
+      "type": "income",
+      "category": "Condomínio",
+      "description": "Condomínio Agosto/2026 - AQUARIUS 1201",
+      "amount": 1217.4,
+      "date": "2026-08-15",
+      "createdAt": "2026-08-05T12:55:20.970Z"
     },
     "AL7wgJizg8k2hjTAO6o1": {
       "propertyId": "4nTeFx11WsM1FUn8YUP8",
@@ -440,6 +449,15 @@
       "amount": 749.24,
       "date": "2026-01-15",
       "createdAt": "2026-03-21T20:54:09.210Z"
+    },
+    "WXalOCwPaxDajjGJmbxd": {
+      "propertyId": "4nTeFx11WsM1FUn8YUP8",
+      "type": "income",
+      "category": "Aluguel",
+      "description": "Aluguel Agosto/2026 - LUDCO 1301",
+      "amount": 6178,
+      "date": "2026-08-03",
+      "createdAt": "2026-08-05T12:56:51.321Z"
     },
     "X4p2LEF29Y7MAPOlalP0": {
       "propertyId": "7nlPDllkKxWbynIcnDhy",
