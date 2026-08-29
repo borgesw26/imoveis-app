@@ -1,5 +1,5 @@
 {
-  "backupDate": "2026-07-30T08:41:41.095Z",
+  "backupDate": "2026-08-29T12:36:17.808Z",
   "properties": {
     "4nTeFx11WsM1FUn8YUP8": {
       "name": "LUDCO",
@@ -198,6 +198,15 @@
       "date": "2026-05-04",
       "createdAt": "2026-05-04T14:51:57.530Z"
     },
+    "9HaYSRFPXMkQRCKP6dv6": {
+      "propertyId": "7nlPDllkKxWbynIcnDhy",
+      "type": "income",
+      "category": "Condomínio",
+      "description": "Condomínio Agosto/2026 - AQUARIUS 1201",
+      "amount": 1217.4,
+      "date": "2026-08-15",
+      "createdAt": "2026-08-05T12:55:20.970Z"
+    },
     "AL7wgJizg8k2hjTAO6o1": {
       "propertyId": "4nTeFx11WsM1FUn8YUP8",
       "type": "income",
@@ -224,6 +233,15 @@
       "amount": 6405,
       "date": "2026-04-01",
       "createdAt": "2026-04-02T00:41:27.610Z"
+    },
+    "C4I5ok9hfWvDtUVbFd2c": {
+      "propertyId": "X7UERC1m3BaieaM7drSs",
+      "type": "income",
+      "category": "Aluguel",
+      "description": "Aluguel Agosto/2026 - AQUARIUS 1103",
+      "amount": 1758.69,
+      "date": "2026-08-12",
+      "createdAt": "2026-08-12T18:36:22.538Z"
     },
     "CMU9szdCY6Bi3n9wuXm8": {
       "propertyId": "X7UERC1m3BaieaM7drSs",
@@ -314,6 +332,15 @@
       "amount": 1700,
       "date": "2026-03-27",
       "createdAt": "2026-03-21T20:37:49.454Z"
+    },
+    "KEFwnAddOtcOuPvB1lGD": {
+      "propertyId": "lfSNhIVzCF7P987nLNZN",
+      "type": "income",
+      "category": "Aluguel",
+      "description": "Aluguel Agosto/2026 - AQUARIUS 1305",
+      "amount": 1700,
+      "date": "2026-08-08",
+      "createdAt": "2026-08-08T13:25:17.554Z"
     },
     "KgW7Kr9m6N2Fk2m1N3kC": {
       "propertyId": "4nTeFx11WsM1FUn8YUP8",
@@ -440,6 +467,15 @@
       "amount": 749.24,
       "date": "2026-01-15",
       "createdAt": "2026-03-21T20:54:09.210Z"
+    },
+    "WXalOCwPaxDajjGJmbxd": {
+      "propertyId": "4nTeFx11WsM1FUn8YUP8",
+      "type": "income",
+      "category": "Aluguel",
+      "description": "Aluguel Agosto/2026 - LUDCO 1301",
+      "amount": 6178,
+      "date": "2026-08-03",
+      "createdAt": "2026-08-05T12:56:51.321Z"
     },
     "X4p2LEF29Y7MAPOlalP0": {
       "propertyId": "7nlPDllkKxWbynIcnDhy",
@@ -620,6 +656,15 @@
       "amount": 749.24,
       "date": "2026-02-15",
       "createdAt": "2026-03-21T20:37:26.213Z"
+    },
+    "mil3PiYX3AqfRjvcR4Z5": {
+      "propertyId": "7nlPDllkKxWbynIcnDhy",
+      "type": "income",
+      "category": "Aluguel",
+      "description": "Aluguel Agosto/2026 - AQUARIUS 1201",
+      "amount": 1930,
+      "date": "2026-08-20",
+      "createdAt": "2026-08-20T11:03:11.402Z"
     },
     "oWwv8GNWdUlrhr2fUchA": {
       "propertyId": "X7UERC1m3BaieaM7drSs",
