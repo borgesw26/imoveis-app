@@ -1,5 +1,5 @@
 {
-  "backupDate": "2026-08-09T07:07:19.732Z",
+  "backupDate": "2026-09-08T11:05:17.371Z",
   "properties": {
     "4nTeFx11WsM1FUn8YUP8": {
       "name": "LUDCO",
@@ -233,6 +233,15 @@
       "amount": 6405,
       "date": "2026-04-01",
       "createdAt": "2026-04-02T00:41:27.610Z"
+    },
+    "C4I5ok9hfWvDtUVbFd2c": {
+      "propertyId": "X7UERC1m3BaieaM7drSs",
+      "type": "income",
+      "category": "Aluguel",
+      "description": "Aluguel Agosto/2026 - AQUARIUS 1103",
+      "amount": 1758.69,
+      "date": "2026-08-12",
+      "createdAt": "2026-08-12T18:36:22.538Z"
     },
     "CMU9szdCY6Bi3n9wuXm8": {
       "propertyId": "X7UERC1m3BaieaM7drSs",
@@ -647,6 +656,15 @@
       "amount": 749.24,
       "date": "2026-02-15",
       "createdAt": "2026-03-21T20:37:26.213Z"
+    },
+    "mil3PiYX3AqfRjvcR4Z5": {
+      "propertyId": "7nlPDllkKxWbynIcnDhy",
+      "type": "income",
+      "category": "Aluguel",
+      "description": "Aluguel Agosto/2026 - AQUARIUS 1201",
+      "amount": 1930,
+      "date": "2026-08-20",
+      "createdAt": "2026-08-20T11:03:11.402Z"
     },
     "oWwv8GNWdUlrhr2fUchA": {
       "propertyId": "X7UERC1m3BaieaM7drSs",
