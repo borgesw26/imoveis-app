@@ -1,5 +1,5 @@
 {
-  "backupDate": "2026-09-21T12:37:23.285Z",
+  "backupDate": "2026-09-22T11:24:04.481Z",
   "properties": {
     "4nTeFx11WsM1FUn8YUP8": {
       "name": "LUDCO",
@@ -25,19 +25,19 @@
       "unit": "1201",
       "area": 79.17,
       "propertyValue": 620000,
-      "rentValue": 1800,
       "condoFee": 1217.4,
       "iptu": 181.34,
       "extraFee": 0,
       "tenant": "NADJA",
-      "startDate": "2026-01-02",
-      "endDate": "2026-08-01",
-      "dueDay": 5,
       "netValue": 1930,
       "notes": "Avenida Professor Magalhães Neto - 2 quartos 1 garagem",
       "status": "occupied",
       "createdAt": "2026-03-21T20:12:47.667Z",
-      "updatedAt": "2026-03-21T20:12:47.667Z"
+      "rentValue": 2150,
+      "endDate": "2027-08-01",
+      "dueDay": 20,
+      "startDate": "2026-09-01",
+      "updatedAt": "2026-09-21T22:23:45.424Z"
     },
     "QnrIvXIbkbj0mxWZZHLZ": {
       "name": "VILAGE ITAP",
@@ -50,13 +50,13 @@
       "dueDay": 1,
       "notes": "",
       "createdAt": "2026-03-21T20:12:48.367Z",
-      "endDate": "2026-04-05",
       "startDate": "2026-04-02",
       "status": "occupied",
       "netValue": 1836,
       "tenant": "",
       "rentValue": 1836,
-      "updatedAt": "2026-09-14T19:49:15.438Z"
+      "endDate": "2027-04-05",
+      "updatedAt": "2026-09-21T22:24:54.152Z"
     },
     "X7UERC1m3BaieaM7drSs": {
       "name": "AQUARIUS",
@@ -620,6 +620,15 @@
       "amount": 1700,
       "date": "2026-01-31",
       "createdAt": "2026-03-21T20:54:17.175Z"
+    },
+    "gKgl7dgF5WgJdi4NkqFU": {
+      "propertyId": "7nlPDllkKxWbynIcnDhy",
+      "type": "income",
+      "category": "Aluguel",
+      "description": "Aluguel Setembro/2026 - AQUARIUS 1201",
+      "amount": 2150,
+      "date": "2026-09-21",
+      "createdAt": "2026-09-21T22:20:53.300Z"
     },
     "gL32AaLkIiopz3fz7pox": {
       "propertyId": "4nTeFx11WsM1FUn8YUP8",

@@ -1,5 +1,5 @@
 {
-  "backupDate": "2026-08-23T06:52:53.828Z",
+  "backupDate": "2026-09-22T11:24:04.481Z",
   "properties": {
     "4nTeFx11WsM1FUn8YUP8": {
       "name": "LUDCO",
@@ -25,19 +25,19 @@
       "unit": "1201",
       "area": 79.17,
       "propertyValue": 620000,
-      "rentValue": 1800,
       "condoFee": 1217.4,
       "iptu": 181.34,
       "extraFee": 0,
       "tenant": "NADJA",
-      "startDate": "2026-01-02",
-      "endDate": "2026-08-01",
-      "dueDay": 5,
       "netValue": 1930,
       "notes": "Avenida Professor Magalhães Neto - 2 quartos 1 garagem",
       "status": "occupied",
       "createdAt": "2026-03-21T20:12:47.667Z",
-      "updatedAt": "2026-03-21T20:12:47.667Z"
+      "rentValue": 2150,
+      "endDate": "2027-08-01",
+      "dueDay": 20,
+      "startDate": "2026-09-01",
+      "updatedAt": "2026-09-21T22:23:45.424Z"
     },
     "QnrIvXIbkbj0mxWZZHLZ": {
       "name": "VILAGE ITAP",
@@ -50,13 +50,13 @@
       "dueDay": 1,
       "notes": "",
       "createdAt": "2026-03-21T20:12:48.367Z",
-      "endDate": "2026-04-05",
-      "netValue": 1.469,
       "startDate": "2026-04-02",
-      "tenant": "Joana",
       "status": "occupied",
-      "rentValue": 1469,
-      "updatedAt": "2026-04-02T08:50:52.540Z"
+      "netValue": 1836,
+      "tenant": "",
+      "rentValue": 1836,
+      "endDate": "2027-04-05",
+      "updatedAt": "2026-09-21T22:24:54.152Z"
     },
     "X7UERC1m3BaieaM7drSs": {
       "name": "AQUARIUS",
@@ -143,6 +143,15 @@
       "amount": 6405,
       "date": "2026-07-03",
       "createdAt": "2026-07-03T13:49:55.168Z"
+    },
+    "2mpjNefTmydM3pYmJfk4": {
+      "propertyId": "lfSNhIVzCF7P987nLNZN",
+      "type": "income",
+      "category": "Aluguel",
+      "description": "Aluguel Setembro/2026 - AQUARIUS 1305",
+      "amount": 1700,
+      "date": "2026-09-15",
+      "createdAt": "2026-09-16T16:50:39.314Z"
     },
     "3P6hOAGhsTamIlKw1XRL": {
       "propertyId": "4nTeFx11WsM1FUn8YUP8",
@@ -252,6 +261,15 @@
       "date": "2026-03-21",
       "createdAt": "2026-03-21T21:34:53.821Z"
     },
+    "CRrdzLiVJHVPLMJ5pjjv": {
+      "propertyId": "4nTeFx11WsM1FUn8YUP8",
+      "createdAt": "2026-09-14T19:42:22.847Z",
+      "amount": 6178,
+      "date": "2026-09-01",
+      "type": "income",
+      "description": "Aluguel Setembro/2026 - LUDCO 1301",
+      "category": "Aluguel"
+    },
     "DLpRkqJDMYqpXduW8y0X": {
       "propertyId": "X7UERC1m3BaieaM7drSs",
       "type": "income",
@@ -296,6 +314,33 @@
       "amount": 996.26,
       "date": "2026-01-15",
       "createdAt": "2026-03-21T20:53:49.114Z"
+    },
+    "ElssunuC2rPwpfK0cSE0": {
+      "amount": 1758.69,
+      "propertyId": "X7UERC1m3BaieaM7drSs",
+      "description": "Aluguel Setembro/2026 - AQUARIUS 1103",
+      "date": "2026-09-14",
+      "type": "income",
+      "category": "Aluguel",
+      "createdAt": "2026-09-14T19:44:31.437Z"
+    },
+    "FhLwsNZ43b5LXLQkXDRb": {
+      "date": "2026-09-01",
+      "type": "income",
+      "createdAt": "2026-09-14T19:42:43.721Z",
+      "category": "Aluguel",
+      "amount": 6178,
+      "propertyId": "4nTeFx11WsM1FUn8YUP8",
+      "description": "Aluguel Setembro/2026 - LUDCO 1301"
+    },
+    "FkbEvnnxkmtxMNvJK9mi": {
+      "propertyId": "QnrIvXIbkbj0mxWZZHLZ",
+      "type": "income",
+      "category": "Aluguel",
+      "description": "Aluguel Setembro/2026 - VILAGE ITAP 10",
+      "amount": 1836,
+      "date": "2026-09-08",
+      "createdAt": "2026-09-14T19:49:43.491Z"
     },
     "FvFroOINB4Y0J4EBm4hJ": {
       "propertyId": "X7UERC1m3BaieaM7drSs",
@@ -576,6 +621,15 @@
       "date": "2026-01-31",
       "createdAt": "2026-03-21T20:54:17.175Z"
     },
+    "gKgl7dgF5WgJdi4NkqFU": {
+      "propertyId": "7nlPDllkKxWbynIcnDhy",
+      "type": "income",
+      "category": "Aluguel",
+      "description": "Aluguel Setembro/2026 - AQUARIUS 1201",
+      "amount": 2150,
+      "date": "2026-09-21",
+      "createdAt": "2026-09-21T22:20:53.300Z"
+    },
     "gL32AaLkIiopz3fz7pox": {
       "propertyId": "4nTeFx11WsM1FUn8YUP8",
       "type": "income",
@@ -611,6 +665,15 @@
       "amount": 1217.4,
       "date": "2026-06-15",
       "createdAt": "2026-06-05T12:36:14.501Z"
+    },
+    "kuVfW31mbvmfnMiW6ig2": {
+      "description": "Aluguel Setembro/2026 - LUDCO 1301",
+      "propertyId": "4nTeFx11WsM1FUn8YUP8",
+      "category": "Aluguel",
+      "date": "2026-09-01",
+      "type": "income",
+      "amount": 6178,
+      "createdAt": "2026-09-14T19:41:46.109Z"
     },
     "lMUmCzuGVN1KfwwtWHcz": {
       "type": "income",
@@ -665,6 +728,15 @@
       "amount": 1930,
       "date": "2026-08-20",
       "createdAt": "2026-08-20T11:03:11.402Z"
+    },
+    "nHHS8dN2WQk58CLt747R": {
+      "propertyId": "4nTeFx11WsM1FUn8YUP8",
+      "date": "2026-09-14",
+      "type": "income",
+      "createdAt": "2026-09-14T19:42:53.066Z",
+      "category": "Aluguel",
+      "description": "Aluguel Setembro/2026 - LUDCO 1301",
+      "amount": 6178
     },
     "oWwv8GNWdUlrhr2fUchA": {
       "propertyId": "X7UERC1m3BaieaM7drSs",
