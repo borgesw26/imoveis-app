@@ -1,5 +1,5 @@
 {
-  "backupDate": "2026-09-22T11:24:04.481Z",
+  "backupDate": "2026-09-23T11:21:01.040Z",
   "properties": {
     "4nTeFx11WsM1FUn8YUP8": {
       "name": "LUDCO",
@@ -105,15 +105,15 @@
       "condoFee": 0,
       "iptu": 0,
       "extraFee": 0,
-      "tenant": "",
-      "startDate": "",
-      "endDate": "",
       "dueDay": 1,
-      "netValue": 2700,
       "notes": "Av 7 de Setembro - 1 quarto 1 garagem",
       "createdAt": "2026-03-21T20:12:47.867Z",
       "status": "occupied",
-      "updatedAt": "2026-03-24T11:12:56.316Z"
+      "endDate": "2027-09-25",
+      "netValue": 2900,
+      "startDate": "2026-09-25",
+      "tenant": "Roberta Castro Cunha",
+      "updatedAt": "2026-09-22T12:17:39.689Z"
     }
   },
   "transactions": {
