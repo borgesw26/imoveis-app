@@ -1,5 +1,5 @@
 {
-  "backupDate": "2026-10-04T12:11:59.859Z",
+  "backupDate": "2026-10-05T14:22:29.055Z",
   "properties": {
     "4nTeFx11WsM1FUn8YUP8": {
       "name": "LUDCO",
@@ -197,6 +197,15 @@
       "amount": 6218,
       "date": "2026-06-01",
       "createdAt": "2026-06-02T00:02:48.479Z"
+    },
+    "78PXsGIhBnzli397HdJE": {
+      "propertyId": "4nTeFx11WsM1FUn8YUP8",
+      "type": "income",
+      "category": "Aluguel",
+      "description": "Aluguel Outubro/2026 - LUDCO 1301",
+      "amount": 6464,
+      "date": "2026-10-01",
+      "createdAt": "2026-10-05T11:54:53.996Z"
     },
     "8JSBu583gka7PZvBrGgH": {
       "propertyId": "4nTeFx11WsM1FUn8YUP8",
@@ -531,6 +540,15 @@
       "date": "2026-02-15",
       "createdAt": "2026-03-21T20:37:11.683Z"
     },
+    "PQpJVXoB1kcQBuXQsZAw": {
+      "propertyId": "4nTeFx11WsM1FUn8YUP8",
+      "type": "income",
+      "category": "Aluguel",
+      "description": "Aluguel Outubro/2026 - LUDCO 1301",
+      "amount": 6405,
+      "date": "2026-10-05",
+      "createdAt": "2026-10-05T11:55:22.649Z"
+    },
     "Q32FEmXuYoa8u5TfP3AY": {
       "propertyId": "4nTeFx11WsM1FUn8YUP8",
       "type": "income",
@@ -557,6 +575,15 @@
       "amount": 749.24,
       "date": "2026-01-15",
       "createdAt": "2026-03-21T20:54:09.210Z"
+    },
+    "SU6MOFm2TB35N64qEjxS": {
+      "propertyId": "4nTeFx11WsM1FUn8YUP8",
+      "type": "income",
+      "category": "Aluguel",
+      "description": "Aluguel Outubro/2026 - LUDCO 1301",
+      "amount": 6364,
+      "date": "2026-10-01",
+      "createdAt": "2026-10-05T11:55:15.831Z"
     },
     "WXalOCwPaxDajjGJmbxd": {
       "propertyId": "4nTeFx11WsM1FUn8YUP8",
@@ -746,6 +773,15 @@
       "amount": 1700,
       "date": "2026-06-10",
       "createdAt": "2026-06-30T17:24:43.111Z"
+    },
+    "m8pVDzlEgXBKTuTIKIef": {
+      "propertyId": "7nlPDllkKxWbynIcnDhy",
+      "type": "income",
+      "category": "Condomínio",
+      "description": "Condomínio Outubro/2026 - AQUARIUS 1201",
+      "amount": 1217.4,
+      "date": "2026-10-15",
+      "createdAt": "2026-10-05T11:54:11.808Z"
     },
     "mOgV4iEVpPXPR4qpumc3": {
       "propertyId": "yCNbZebbXKG5Lc9oBTL3",
