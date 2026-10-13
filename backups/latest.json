@@ -1,5 +1,5 @@
 {
-  "backupDate": "2026-10-12T15:09:30.003Z",
+  "backupDate": "2026-10-13T14:01:35.139Z",
   "properties": {
     "4nTeFx11WsM1FUn8YUP8": {
       "name": "LUDCO",
@@ -386,6 +386,15 @@
       "amount": 195.02,
       "date": "2026-01-15",
       "createdAt": "2026-03-21T20:54:10.300Z"
+    },
+    "FvnGAI6k5ySwBmx0UPAA": {
+      "propertyId": "lfSNhIVzCF7P987nLNZN",
+      "type": "income",
+      "category": "Aluguel",
+      "description": "Aluguel Outubro/2026 - AQUARIUS 1305",
+      "amount": 1700,
+      "date": "2026-10-13",
+      "createdAt": "2026-10-13T11:13:38.924Z"
     },
     "FwqmCHGFXnLhyS597N5C": {
       "propertyId": "4nTeFx11WsM1FUn8YUP8",
