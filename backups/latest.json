@@ -1,5 +1,5 @@
 {
-  "backupDate": "2026-10-13T14:01:35.139Z",
+  "backupDate": "2026-10-14T11:38:18.999Z",
   "properties": {
     "4nTeFx11WsM1FUn8YUP8": {
       "name": "LUDCO",
@@ -206,6 +206,15 @@
       "amount": 6464,
       "date": "2026-10-01",
       "createdAt": "2026-10-05T11:54:53.996Z"
+    },
+    "7mqd978GtG0eMC7XyVmw": {
+      "propertyId": "QnrIvXIbkbj0mxWZZHLZ",
+      "type": "income",
+      "category": "Aluguel",
+      "description": "Aluguel Outubro/2026 - VILAGE ITAP 10",
+      "amount": 3000,
+      "date": "2026-10-06",
+      "createdAt": "2026-10-13T19:20:13.433Z"
     },
     "8JSBu583gka7PZvBrGgH": {
       "propertyId": "4nTeFx11WsM1FUn8YUP8",
@@ -800,6 +809,15 @@
       "amount": 2700,
       "date": "2026-01-31",
       "createdAt": "2026-03-21T20:54:24.790Z"
+    },
+    "mPzbbXm9DxsanDfOOhjP": {
+      "propertyId": "X7UERC1m3BaieaM7drSs",
+      "type": "income",
+      "category": "Aluguel",
+      "description": "Aluguel Outubro/2026 - AQUARIUS 1103",
+      "amount": 1758.69,
+      "date": "2026-10-13",
+      "createdAt": "2026-10-13T19:19:48.442Z"
     },
     "metOS9qfRtQnNIeZ6tPA": {
       "propertyId": "X7UERC1m3BaieaM7drSs",
