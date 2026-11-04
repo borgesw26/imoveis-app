@@ -1,5 +1,5 @@
 {
-  "backupDate": "2026-11-03T13:59:32.578Z",
+  "backupDate": "2026-11-04T14:15:18.850Z",
   "properties": {
     "4nTeFx11WsM1FUn8YUP8": {
       "name": "LUDCO",
@@ -647,6 +647,15 @@
       "amount": 1800,
       "date": "2026-03-24",
       "createdAt": "2026-03-24T11:14:53.166Z"
+    },
+    "Z610IFuvkB4MBZLrzv7e": {
+      "propertyId": "4nTeFx11WsM1FUn8YUP8",
+      "type": "income",
+      "category": "Aluguel",
+      "description": "Aluguel Novembro/2026 - LUDCO 1301",
+      "amount": 6405,
+      "date": "2026-11-03",
+      "createdAt": "2026-11-03T23:33:43.513Z"
     },
     "a5Ei69L93XpDEjF2X2Mp": {
       "propertyId": "lfSNhIVzCF7P987nLNZN",
